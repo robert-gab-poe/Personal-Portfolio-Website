@@ -1,47 +1,42 @@
 import { motion } from 'framer-motion';
+import { useLanguage } from '../i18n/LanguageContext';
 import './Section.css';
 
-const skillCategories = [
-  {
-    icon: '💻',
-    title: 'Frontend Development',
-    description: 'Building responsive and interactive user interfaces with modern frameworks and clean code.',
-    tags: ['JavaScript', 'HTML5', 'CSS3', 'React'],
-  },
-  {
-    icon: '⚙️',
-    title: 'Backend Development',
-    description: 'Creating robust server-side applications and RESTful APIs with secure authentication.',
-    tags: ['C#', '.NET', 'PHP', 'Node.js'],
-  },
-  {
-    icon: '🗄️',
-    title: 'Database Management',
-    description: 'Designing and managing efficient databases for modern applications.',
-    tags: ['MySQL', 'SQL Server', 'MongoDB'],
-  },
-  {
-    icon: '🚀',
-    title: 'DevOps & Tools',
-    description: 'Containerization and version control for seamless deployment workflows.',
-    tags: ['Docker', 'Git', 'Apache'],
-  },
-];
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.2 },
-  },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-};
-
 const Skills = () => {
+  const { t } = useLanguage();
+
+  const skillCategories = [
+    {
+      icon: '💻',
+      key: 'frontend',
+    },
+    {
+      icon: '⚙️',
+      key: 'backend',
+    },
+    {
+      icon: '🗄️',
+      key: 'database',
+    },
+    {
+      icon: '🚀',
+      key: 'devops',
+    },
+  ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2 },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <section className="section" id="skills">
       <motion.h2
@@ -51,7 +46,7 @@ const Skills = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        Skills Constellation
+        {t('skills.title')}
       </motion.h2>
 
       <motion.p
@@ -61,7 +56,7 @@ const Skills = () => {
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
-        My technical abilities as stars in the developer universe
+        {t('skills.subtitle')}
       </motion.p>
 
       <motion.div
@@ -74,10 +69,10 @@ const Skills = () => {
         {skillCategories.map((skill, index) => (
           <motion.div key={index} className="skill-card" variants={cardVariants}>
             <div className="skill-card__icon">{skill.icon}</div>
-            <h3 className="skill-card__title">{skill.title}</h3>
-            <p className="skill-card__description">{skill.description}</p>
+            <h3 className="skill-card__title">{t(`skills.${skill.key}.title`)}</h3>
+            <p className="skill-card__description">{t(`skills.${skill.key}.description`)}</p>
             <div className="skill-card__tags">
-              {skill.tags.map((tag, i) => (
+              {t(`skills.${skill.key}.tags`).map((tag, i) => (
                 <span key={i} className="skill-tag">{tag}</span>
               ))}
             </div>

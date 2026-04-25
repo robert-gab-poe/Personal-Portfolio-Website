@@ -1,0 +1,354 @@
+{
+  "en": {
+    "nav": {
+      "skills": "Skills",
+      "languages": "Languages",
+      "projects": "Projects",
+      "links": "Links",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Robert Gabriel",
+      "subtitle": "IT Specialist & App Developer",
+      "location": "Figueres, Catalonia",
+      "description": "Welcome to my universe. I'm an IT specialist and app developer at AFISA, exploring the cosmos of technology one line of code at a time.",
+      "scroll": "Explore my galaxy"
+    },
+    "skills": {
+      "title": "Skills Constellation",
+      "subtitle": "My technical abilities as stars in the developer universe",
+      "frontend": {
+        "title": "Frontend Development",
+        "description": "Building responsive and interactive user interfaces with modern frameworks and clean code.",
+        "tags": ["JavaScript", "HTML5", "CSS3", "React"]
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Creating robust server-side applications and RESTful APIs with secure authentication.",
+        "tags": ["C#", ".NET", "PHP", "Node.js"]
+      },
+      "database": {
+        "title": "Database Management",
+        "description": "Designing and managing efficient databases for modern applications.",
+        "tags": ["MySQL", "SQL Server", "MongoDB"]
+      },
+      "devops": {
+        "title": "DevOps & Tools",
+        "description": "Containerization and version control for seamless deployment workflows.",
+        "tags": ["Docker", "Git", "Apache"]
+      }
+    },
+    "languages": {
+      "title": "Programming Languages",
+      "subtitle": "Stars in my coding constellation",
+      "levels": {
+        "expert": "Expert",
+        "advanced": "Advanced",
+        "intermediate": "Intermediate"
+      }
+    },
+    "projects": {
+      "title": "Projects Galaxy",
+      "subtitle": "Exploring the universe of my work",
+      "loading": "Loading stellar projects...",
+      "stats": {
+        "repositories": "Repositories",
+        "stars": "Stars Earned",
+        "forks": "Forks Created"
+      },
+      "noDescription": "No description available for this cosmic creation."
+    },
+    "links": {
+      "title": "Connect With Me",
+      "subtitle": "Explore my universes across different platforms",
+      "github": "GitHub",
+      "githubSubtitle": "@robert-gab-poe",
+      "linkedin": "LinkedIn",
+      "linkedinSubtitle": "Robert Gabriel Poenaru Ivan",
+      "instagram": "Instagram",
+      "instagramSubtitle": "@pixelsbyrobi"
+    },
+    "contact": {
+      "title": "Send a Signal",
+      "subtitle": "Let's communicate across the cosmos",
+      "nameLabel": "Your Name",
+      "namePlaceholder": "Enter your cosmic identifier",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Share your thoughts across the universe...",
+      "submit": "Send Message",
+      "submitting": "Transmitting...",
+      "success": {
+        "icon": "Message Transmitted!",
+        "title": "Your signal has been received. I'll respond as soon as possible!"
+      },
+      "location": "Figueres, Catalonia",
+      "work": "IT Specialist at AFISA"
+    }
+  },
+  "es": {
+    "nav": {
+      "skills": "Habilidades",
+      "languages": "Lenguajes",
+      "projects": "Proyectos",
+      "links": "Enlaces",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "title": "Robert Gabriel",
+      "subtitle": "Especialista IT & Desarrollador de Apps",
+      "location": "Figueres, Cataluña",
+      "description": "Bienvenido a mi universo. Soy especialista en TI y desarrollador de aplicaciones en AFISA, explorando el cosmos de la tecnología línea de código a la vez.",
+      "scroll": "Explora mi galaxia"
+    },
+    "skills": {
+      "title": "Constelación de Habilidades",
+      "subtitle": "Mis habilidades técnicas como estrellas en el universo del desarrollador",
+      "frontend": {
+        "title": "Desarrollo Frontend",
+        "description": "Construyendo interfaces de usuario responsivas e interactivas con frameworks modernos y código limpio.",
+        "tags": ["JavaScript", "HTML5", "CSS3", "React"]
+      },
+      "backend": {
+        "title": "Desarrollo Backend",
+        "description": "Creando aplicaciones robustas del lado del servidor y APIs RESTful con autenticación segura.",
+        "tags": ["C#", ".NET", "PHP", "Node.js"]
+      },
+      "database": {
+        "title": "Gestión de Bases de Datos",
+        "description": "Diseñando y gestionando bases de datos eficientes para aplicaciones modernas.",
+        "tags": ["MySQL", "SQL Server", "MongoDB"]
+      },
+      "devops": {
+        "title": "DevOps & Herramientas",
+        "description": "Contenedores y control de versiones para flujos de trabajo de despliegue fluidos.",
+        "tags": ["Docker", "Git", "Apache"]
+      }
+    },
+    "languages": {
+      "title": "Lenguajes de Programación",
+      "subtitle": "Estrellas en mi constelación de código",
+      "levels": {
+        "expert": "Experto",
+        "advanced": "Avanzado",
+        "intermediate": "Intermedio"
+      }
+    },
+    "projects": {
+      "title": "Galaxia de Proyectos",
+      "subtitle": "Explorando el universo de mi trabajo",
+      "loading": "Cargando proyectos estelares...",
+      "stats": {
+        "repositories": "Repositorios",
+        "stars": "Estrellas Ganadas",
+        "forks": "Bifurcaciones Creadas"
+      },
+      "noDescription": "Sin descripción disponible para esta creación cósmica."
+    },
+    "links": {
+      "title": "Conéctate Conmigo",
+      "subtitle": "Explora mis universos en diferentes plataformas",
+      "github": "GitHub",
+      "githubSubtitle": "@robert-gab-poe",
+      "linkedin": "LinkedIn",
+      "linkedinSubtitle": "Robert Gabriel Poenaru Ivan",
+      "instagram": "Instagram",
+      "instagramSubtitle": "@pixelsbyrobi"
+    },
+    "contact": {
+      "title": "Envía una Señal",
+      "subtitle": "Comuniquémonos a través del cosmos",
+      "nameLabel": "Tu Nombre",
+      "namePlaceholder": "Ingresa tu identificador cósmico",
+      "emailLabel": "Correo Electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Comparte tus pensamientos a través del universo...",
+      "submit": "Enviar Mensaje",
+      "submitting": "Transmitiendo...",
+      "success": {
+        "icon": "¡Mensaje Transmitido!",
+        "title": "Tu señal ha sido recibida. ¡Responderé lo antes posible!"
+      },
+      "location": "Figueres, Cataluña",
+      "work": "Especialista IT en AFISA"
+    }
+  },
+  "ca": {
+    "nav": {
+      "skills": "Habilitats",
+      "languages": "Llenguatges",
+      "projects": "Projectes",
+      "links": "Enllaços",
+      "contact": "Contacte"
+    },
+    "hero": {
+      "title": "Robert Gabriel",
+      "subtitle": "Especialista IT & Desenvolupador d'Apps",
+      "location": "Figueres, Catalunya",
+      "description": "Benvingut al meu univers. Sóc especialista en TI i desenvolupador d'aplicacions a AFISA, explorant el cosmos de la tecnologia línia de codi a línia.",
+      "scroll": "Explora la meva galàxia"
+    },
+    "skills": {
+      "title": "Constel·lació d'Habilitats",
+      "subtitle": "Les meves habilitats tècniques com estrelles a l'univers del desenvolupador",
+      "frontend": {
+        "title": "Desenvolupament Frontend",
+        "description": "Construint interfícies d'usuari responsives i interactives amb frameworks moderns i codi net.",
+        "tags": ["JavaScript", "HTML5", "CSS3", "React"]
+      },
+      "backend": {
+        "title": "Desenvolupament Backend",
+        "description": "Creant aplicacions robustes del costat del servidor i APIs RESTful amb autenticació segura.",
+        "tags": ["C#", ".NET", "PHP", "Node.js"]
+      },
+      "database": {
+        "title": "Gestió de Bases de Dades",
+        "description": "Dissenyant i gestionant bases de dades eficients per a aplicacions modernes.",
+        "tags": ["MySQL", "SQL Server", "MongoDB"]
+      },
+      "devops": {
+        "title": "DevOps & Eines",
+        "description": "Contenidors i control de versions per a fluxos de treball de desplegament fluids.",
+        "tags": ["Docker", "Git", "Apache"]
+      }
+    },
+    "languages": {
+      "title": "Llenguatges de Programació",
+      "subtitle": "Estrelles a la meva constel·lació de codi",
+      "levels": {
+        "expert": "Expert",
+        "advanced": "Avançat",
+        "intermediate": "Intermedi"
+      }
+    },
+    "projects": {
+      "title": "Galàxia de Projectes",
+      "subtitle": "Explorant l'univers del meu treball",
+      "loading": "Carregant projectes estel·lars...",
+      "stats": {
+        "repositories": "Repositoris",
+        "stars": "Estrelles Guanyades",
+        "forks": "Forques Creades"
+      },
+      "noDescription": "Sense descripció disponible per a aquesta creació còsmica."
+    },
+    "links": {
+      "title": "Connecta't Amb Mi",
+      "subtitle": "Explora els meus universos a diferents plataformes",
+      "github": "GitHub",
+      "githubSubtitle": "@robert-gab-poe",
+      "linkedin": "LinkedIn",
+      "linkedinSubtitle": "Robert Gabriel Poenaru Ivan",
+      "instagram": "Instagram",
+      "instagramSubtitle": "@pixelsbyrobi"
+    },
+    "contact": {
+      "title": "Envia un Senyal",
+      "subtitle": "Comuniquem-nos a través del cosmos",
+      "nameLabel": "El Teu Nom",
+      "namePlaceholder": "Introdueix el teu identificador còsmic",
+      "emailLabel": "Correu Electrònic",
+      "emailPlaceholder": "elTeu@email.com",
+      "messageLabel": "Missatge",
+      "messagePlaceholder": "Comparteix els teus pensaments a través de l'univers...",
+      "submit": "Envia Missatge",
+      "submitting": "Transmetent...",
+      "success": {
+        "icon": "Missatge Transmes!",
+        "title": "El teu senyal ha estat rebut. Respondré el més aviat possible!"
+      },
+      "location": "Figueres, Catalunya",
+      "work": "Especialista IT a AFISA"
+    }
+  },
+  "ro": {
+    "nav": {
+      "skills": "Abilități",
+      "languages": "Limbaje",
+      "projects": "Proiecte",
+      "links": "Link-uri",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Robert Gabriel",
+      "subtitle": "Specialist IT & Dezvoltator de Aplicații",
+      "location": "Figueres, Catalonia",
+      "description": "Bine ai venit în universul meu. Sunt specialist IT și dezvoltator de aplicații la AFISA, explorând cosmosul tehnologiei linie de cod după linie de cod.",
+      "scroll": "Explorează galaxia mea"
+    },
+    "skills": {
+      "title": "Constelația de Abilități",
+      "subtitle": "Abilitățile mele tehnice ca stele în universul dezvoltatorului",
+      "frontend": {
+        "title": "Dezvoltare Frontend",
+        "description": "Construind interfețe de utilizator receptive și interactive cu framework-uri moderne și cod curat.",
+        "tags": ["JavaScript", "HTML5", "CSS3", "React"]
+      },
+      "backend": {
+        "title": "Dezvoltare Backend",
+        "description": "Creând aplicații robuste server-side și API-uri RESTful cu autentificare securizată.",
+        "tags": ["C#", ".NET", "PHP", "Node.js"]
+      },
+      "database": {
+        "title": "Managementul Bazelor de Date",
+        "description": "Proiectând și gestionând baze de date eficiente pentru aplicații moderne.",
+        "tags": ["MySQL", "SQL Server", "MongoDB"]
+      },
+      "devops": {
+        "title": "DevOps & Unelte",
+        "description": "Containerizare și control al versiunilor pentru fluxuri de lucru de deployment fluide.",
+        "tags": ["Docker", "Git", "Apache"]
+      }
+    },
+    "languages": {
+      "title": "Limbaje de Programare",
+      "subtitle": "Stele în constelația mea de cod",
+      "levels": {
+        "expert": "Expert",
+        "advanced": "Avansat",
+        "intermediate": "Intermediar"
+      }
+    },
+    "projects": {
+      "title": "Galaxia Proiectelor",
+      "subtitle": "Explorând universul muncii mele",
+      "loading": "Se încarcă proiectele stelare...",
+      "stats": {
+        "repositories": "Repo-uri",
+        "stars": "Stele Câștigate",
+        "forks": "Fork-uri Create"
+      },
+      "noDescription": "Fără descriere disponibilă pentru această creație cosmică."
+    },
+    "links": {
+      "title": "Conectează-te Cu Mine",
+      "subtitle": "Explorează universurile mele pe diferite platforme",
+      "github": "GitHub",
+      "githubSubtitle": "@robert-gab-poe",
+      "linkedin": "LinkedIn",
+      "linkedinSubtitle": "Robert Gabriel Poenaru Ivan",
+      "instagram": "Instagram",
+      "instagramSubtitle": "@pixelsbyrobi"
+    },
+    "contact": {
+      "title": "Trimite un Semnal",
+      "subtitle": "Să comunicăm prin cosmos",
+      "nameLabel": "Numele Tău",
+      "namePlaceholder": "Introdu identificatorul tău cosmic",
+      "emailLabel": "Adresa de Email",
+      "emailPlaceholder": "emailul@tau.com",
+      "messageLabel": "Mesaj",
+      "messagePlaceholder": "Împărtășește-ți gândurile prin univers...",
+      "submit": "Trimite Mesaj",
+      "submitting": "Se transmite...",
+      "success": {
+        "icon": "Mesaj Transmis!",
+        "title": "Semnalul tău a fost primit. Voi răspunde cât mai curând posibil!"
+      },
+      "location": "Figueres, Catalonia",
+      "work": "Specialist IT la AFISA"
+    }
+  }
+}

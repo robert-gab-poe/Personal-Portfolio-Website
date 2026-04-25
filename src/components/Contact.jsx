@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../i18n/LanguageContext';
 import './Contact.css';
 import './Section.css';
 
 const Contact = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -38,7 +40,7 @@ const Contact = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        Send a Signal
+        {t('contact.title')}
       </motion.h2>
 
       <motion.p
@@ -48,7 +50,7 @@ const Contact = () => {
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
-        Let's communicate across the cosmos
+        {t('contact.subtitle')}
       </motion.p>
 
       <motion.div
@@ -66,23 +68,23 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="contact-success__icon">🚀</div>
-            <h3 className="contact-success__title">Message Transmitted!</h3>
+            <h3 className="contact-success__title">{t('contact.success.icon')}</h3>
             <p className="contact-success__text">
-              Your signal has been received. I'll respond as soon as possible!
+              {t('contact.success.title')}
             </p>
           </motion.div>
         ) : (
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="contact-form__group">
               <label className="contact-form__label" htmlFor="name">
-                Your Name
+                {t('contact.nameLabel')}
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 className="contact-form__input"
-                placeholder="Enter your cosmic identifier"
+                placeholder={t('contact.namePlaceholder')}
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -91,14 +93,14 @@ const Contact = () => {
 
             <div className="contact-form__group">
               <label className="contact-form__label" htmlFor="email">
-                Email Address
+                {t('contact.emailLabel')}
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 className="contact-form__input"
-                placeholder="your@email.com"
+                placeholder={t('contact.emailPlaceholder')}
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -107,13 +109,13 @@ const Contact = () => {
 
             <div className="contact-form__group">
               <label className="contact-form__label" htmlFor="message">
-                Message
+                {t('contact.messageLabel')}
               </label>
               <textarea
                 id="message"
                 name="message"
                 className="contact-form__textarea"
-                placeholder="Share your thoughts across the universe..."
+                placeholder={t('contact.messagePlaceholder')}
                 value={formData.message}
                 onChange={handleChange}
                 required
@@ -127,12 +129,12 @@ const Contact = () => {
             >
               {loading ? (
                 <>
-                  <span>Transmitting...</span>
+                  <span>{t('contact.submitting')}</span>
                   <span>✉️</span>
                 </>
               ) : (
                 <>
-                  <span>Send Message</span>
+                  <span>{t('contact.submit')}</span>
                   <span>🚀</span>
                 </>
               )}
@@ -149,11 +151,11 @@ const Contact = () => {
         >
           <div className="contact-info__item">
             <span className="contact-info__item-icon">📍</span>
-            <span className="contact-info__item-text">Figueres, Catalonia</span>
+            <span className="contact-info__item-text">{t('contact.location')}</span>
           </div>
           <div className="contact-info__item">
-            <span className="contact-info__item-icon">🎓</span>
-            <span className="contact-info__item-text">INS Cendrassos Student</span>
+            <span className="contact-info__item-icon">💼</span>
+            <span className="contact-info__item-text">{t('contact.work')}</span>
           </div>
         </motion.div>
       </motion.div>

@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../i18n/LanguageContext';
 import './Projects.css';
 import './Section.css';
 
 const Projects = () => {
+  const { t } = useLanguage();
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [stats, setStats] = useState({ repos: 0, stars: 0, forks: 0 });
@@ -71,11 +73,11 @@ const Projects = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          Projects Galaxy
+          {t('projects.title')}
         </motion.h2>
         <div className="projects-loading">
           <div className="projects-loading__spinner" />
-          <p>Loading stellar projects...</p>
+          <p>{t('projects.loading')}</p>
         </div>
       </section>
     );
@@ -90,7 +92,7 @@ const Projects = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        Projects Galaxy
+        {t('projects.title')}
       </motion.h2>
 
       <motion.p
@@ -100,7 +102,7 @@ const Projects = () => {
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
-        Exploring the universe of my work
+        {t('projects.subtitle')}
       </motion.p>
 
       <motion.div
@@ -112,15 +114,15 @@ const Projects = () => {
       >
         <div className="projects-stat">
           <div className="projects-stat__number">{stats.repos}</div>
-          <div className="projects-stat__label">Repositories</div>
+          <div className="projects-stat__label">{t('projects.stats.repositories')}</div>
         </div>
         <div className="projects-stat">
           <div className="projects-stat__number">{stats.stars}</div>
-          <div className="projects-stat__label">Stars Earned</div>
+          <div className="projects-stat__label">{t('projects.stats.stars')}</div>
         </div>
         <div className="projects-stat">
           <div className="projects-stat__number">{stats.forks}</div>
-          <div className="projects-stat__label">Forks Created</div>
+          <div className="projects-stat__label">{t('projects.stats.forks')}</div>
         </div>
       </motion.div>
 
@@ -148,7 +150,7 @@ const Projects = () => {
             </div>
             <h3 className="project-card__title">{repo.name}</h3>
             <p className="project-card__description">
-              {repo.description || 'No description available for this cosmic creation.'}
+              {repo.description || t('projects.noDescription')}
             </p>
             <div className="project-card__footer">
               <span className="project-card__language">

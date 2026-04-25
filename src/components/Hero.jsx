@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
+import { useLanguage } from '../i18n/LanguageContext';
 import './Hero.css';
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="hero">
       <motion.div
@@ -22,7 +25,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
-        Robert Gabriel
+        {t('hero.title')}
       </motion.h1>
 
       <motion.p
@@ -31,7 +34,7 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
       >
-        Full-Stack Developer & Web Designer
+        {t('hero.subtitle')}
       </motion.p>
 
       <motion.p
@@ -40,7 +43,7 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6 }}
       >
-        Figueres, Catalonia
+        {t('hero.location')}
       </motion.p>
 
       <motion.p
@@ -49,8 +52,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 0.8 }}
       >
-        Welcome to my universe. I'm a web application designer student at INS Cendrassos,
-        exploring the cosmos of technology one line of code at a time.
+        {t('hero.description')}
       </motion.p>
 
       <motion.div
@@ -59,7 +61,7 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.8 }}
       >
-        <span>Explore my galaxy</span>
+        <span>{t('hero.scroll')}</span>
         <div className="hero__scroll-icon" />
       </motion.div>
     </section>
