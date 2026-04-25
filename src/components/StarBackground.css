@@ -1,0 +1,70 @@
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes drift {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-20px) translateX(10px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+@keyframes shootingStar {
+  0% { transform: translateX(0) translateY(0); opacity: 1; }
+  100% { transform: translateX(300px) translateY(300px); opacity: 0; }
+}
+
+.star-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  background: linear-gradient(135deg, #0a0a1a 0%, #1e1b4b 50%, #0f0f2d 100%);
+}
+
+.star {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%;
+  animation: twinkle var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+.star--large {
+  box-shadow: 0 0 10px 2px rgba(139, 92, 246, 0.5);
+}
+
+.star--medium {
+  box-shadow: 0 0 6px 1px rgba(139, 92, 246, 0.3);
+}
+
+.nebula {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.4;
+  animation: drift 20s ease-in-out infinite;
+}
+
+.nebula--purple {
+  background: radial-gradient(circle, #8b5cf6, transparent);
+}
+
+.nebula--pink {
+  background: radial-gradient(circle, #ec4899, transparent);
+}
+
+.nebula--blue {
+  background: radial-gradient(circle, #3b82f6, transparent);
+}
+
+.shooting-star {
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  animation: shootingStar 1s ease-in forwards;
+}
